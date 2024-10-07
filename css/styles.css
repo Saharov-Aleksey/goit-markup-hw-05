@@ -886,7 +886,9 @@ input:checked + label > span {
   input:focus + svg {
     fill:#4D5AE5;
     }
-
+    input:focus {
+      border-color:#4D5AE5;
+      }
 .container-link{
   color: #4d5ae5;
   }
