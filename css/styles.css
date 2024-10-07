@@ -878,25 +878,11 @@ input:focus + svg {
 }
 
 
-.container_text .icon-checkbox {
-  fill: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input:checked + label .container_text {
-  background-color: var(--checkbox-bg-color); /* Цвет фона */
-  border: none; /* Убираем границу */
-}
-
-input:checked + label .container_text .icon-checkbox {
-  fill: var(--icon-fill-color); /* Цвет иконки */
-}
-
-/* Переменные для цвета */
-:root {
-  --checkbox-bg-color: #404bbf; /* Цвет фона при checked */
-  --icon-fill-color: #F4F4FD;   /* Цвет иконки при checked */
-}
+input:checked + label > span {
+  background-color: #404bbf;
+  fill: #F4F4FD; 
+  border: none;
+  }
 
 .container-link{
   color: #4d5ae5;
